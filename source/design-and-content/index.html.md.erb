@@ -1,0 +1,218 @@
+---
+title: Design and content
+weight: 3
+---
+
+# Design and content
+
+The [Service Manual guidance on design](LINK) has best practice advice on how to:
+
+- name, structure and scope your service
+- prototype
+- use design patterns
+
+GOV.UK also has [guidance on planning, writing and managing content](LINK).
+
+These are our other recommendations for GOV.UK Verify-specific design and content.
+
+## Check research on existing patterns
+
+Identity providers, service teams and the GOV.UK Verify programme have already done a lot of research into possible designs. Check the [design patterns](LINK) we’ve identified so far.
+
+The patterns are based on findings from user research conducted by GDS, and relate to identity verification for government services. Identity providers may customise the patterns with their own design and branding.
+
+- Document picker
+- Faster payments
+- LOA1 failure
+- LOA1 success
+- Method choice
+- Update personal details
+- Uplift failure
+- Uplift message
+- Uplift success
+
+Each pattern contains:
+
+- a summary of research findings
+- a screenshot of how the patterns might look
+- the raw content
+
+## Content best practice
+
+###  Use clear, consistent language
+
+Use plain English, and be concise but polite. You can use an app like [Hemingway](LINK) to check readability.
+
+Use the same words as your users to minimise cognitive load and make it easier for them to provide the correct information.
+
+Use sentence case instead of title case or all caps. It’s easier for users to process. This includes headings, subheadings, buttons and form labels.
+
+Use language users can trust. Poor spelling and grammar (along with inconsistent capitalisation) is often associated with phishing sites. You should:
+
+- check any translations to avoid awkward or confusing constructions.
+- use proper punctuation (no double !, no space before ?)
+- make sure your tone or word choice isn’t too informal - users may not feel they can trust you with their information.
+
+Forms are like a conversation between the service and the user. If it’s the:
+
+- service ‘speaking’, the user is ‘you’ or ‘your’ and the service is ‘we’, ‘us’, ‘our’ and so on
+- user ‘speaking’, use ‘I’, ‘me’ or ‘my’
+
+This applies to all microcopy, including headings, input labels and link text.
+
+### Vocabulary
+
+Using consistent vocabulary across the hub and identity provider journeys will help maintain user trust and confidence.
+
+#### GOV.UK Verify
+
+See "Writing Verify" in the branding rules.
+**Don't use:** identity assurance, hub, GOV.UK
+
+#### government service
+
+The word 'government' must always be in lowercase (https://www.gov.uk/guidance/style-guide/a-to-z-of-gov-uk-style#government).
+See "Referring to government services" in the branding rules.
+**Don't use:** relying party, service provider, RP, SP, transaction, GOV.UK websites, GOV.UK services, Verify services.
+
+#### identity test
+
+The process of testing a user’s knowledge about the claimed identity to verify that they are who they claim to be.
+This language performs well in research and helps users understand why they'll be asked intrusive questions.
+**Don't use:** KBVs, knowledge based verification questions
+
+#### security code
+
+A code that is sent to a user as part of the 2 stage authentication process when accessing the service. Stage 1: username and password. Stage 2: security code.
+**Don't use:** two-factor authentication, 2 step verification, one time code, OTC, confirmation code
+
+#### sign in
+
+The name for the process of using identity assurance to access digital transactions on GOV.UK.
+It's plainer than log in and users who understand log in would understand sign in too, while the converse might not be the case.
+**Don't use:** log in, log on
+
+#### UK photocard driving licence
+
+Issued by the Driver and Vehicle Licensing Agency (DVLA), UK photocard driving licences can serve as proof of identity in non-driving contexts.
+Users will try to use paper driving licences, paper counterparts or driving licences issued in other countries if we aren't specific about which document they must use.
+**Don't use:** driving licence
+
+#### verified your identity / your identity has been verified
+
+This is different to opening an account or registering - users want to verify their identity so they can access the government service they originally set out to do.
+Users that fail to verify their identity have still opened an account and registered with an IDP.
+**Don't use:** ‘Congratulations! You've opened your account’, or ‘Registration complete’
+
+Read:
+
+- [Grammarly: Use Plain English, Please](LINK)
+- [NNG: Minimize Cognitive Load to Maximize Usability](LINK)
+- [NNG: The top ten design mistakes](LINK)
+- [Cnet: How to spot a phishing email](LINK)
+
+### Explain how you’re using information
+
+Explain why you are asking for each piece of information and how you will use it - at the point at which you are asking for it. If all identity providers do this, we’ll be able to remove explanations from the hub, reducing the number of screens before identity provider selection.
+
+Explain that bank details will be used to check name and address only, and will not be used for taking payments. In research we find that even when this information is given in the hub, users do not remember and often stall when asked for bank account details. Many say that they would give up at this point, as it seems suspicious.
+
+If users need to set a password for their identity account, but not for signing in to the service, be clear about how and when they will need the password. Telling users they won’t need passwords to access services, then asking them to set up a password (for their identity account) is confusing. In research, users don’t often distinguish between the processes at setup.
+
+If you’re using data from someone’s credit history, reassure them that their credit rating won’t be affected by the process.
+
+Read the GOV.UK guidance on [form structure](LINK) and [question pages](LINK).
+
+### Only ask for what you need
+
+You shouldn’t ask users for their title. It’s extra work for users and you’re forcing them to potentially reveal their gender and marital status, which they may not want to do.
+
+Only ask for a user’s gender or sex if you will use this for identity verification.
+
+A user’s gender or sex on official documents may be different from how they identify in their day-to-day life. If you are using gender or sex for verification, consider asking: “Please give your gender as it appears on your [passport]”
+(or wherever it will be checked)
+
+Making it clear how this will be checked will help users give the appropriate answer. It will also help them understand why other options aren’t available.
+
+As with any personal data, if it won’t be used for identity verification, don’t ask for it. If it’s checked against passport or driving license records, but the user does not have either of these, there is no need to ask. It’s best to ask when verifying that document rather than on a general details page.
+
+If the user chooses not to give their gender or sex, make sure the alternative is not dehumanising. Consider “I prefer not to say” instead of “not specified”.
+
+Read:
+
+- [GOV.UK Design System: gender or sex](LINK)
+- [The Question Protocol: How to Make Sure Every Form Field Is Necessary](LINK)
+- [Design for Real Life. Eric Mayer & Sara Wachter-Boettcher (2016)](LINK)
+
+### Write clear error messages
+
+Error messages should be explicit, human-readable, polite and precise. They should offer constructive advice on how to fix the problem. Users don’t need to see error codes or types.
+
+You’ll probably need to create multiple error messages per field, so they’re as specific to the problem as possible. Focus on telling the user how to fix the problem rather than describing what’s gone wrong.
+
+Read:
+
+- [NNG: Error Message Guidelines](LINK)
+- [A List Apart: Creating Content for Sensitive Situations](LINK)
+
+### Don’t waste users’ time
+
+Avoid duplicating instructions or information on the same page.
+
+Give users an idea of what to expect next. For example, if a marriage certificate can only be used if it’s from a specific date range, let the user know before they choose this ID type. If they spend time digging out their marriage certificate only to find on the next screen that they can’t use it, this will be frustrating.
+
+### Make journeys consistent
+
+Check that any guidance you link to is up to date and consistent with your current user journey.
+
+If using an app as part of your verification process, make sure the name in the app store/on the phone matches the name you use to refer to it in the web journey. Avoid unnecessary naming or branding of features or apps. If you need to, make sure names help users understand what the app or feature does.
+
+Read:
+
+- [GOV.UK Service Manual: naming your service](LINK)
+- [B2B founders: Stop naming stuff](LINK)
+
+If you’re using an email address as a username, then only ask for an email address at signin. You don’t need to use the word “username” at all. It may confuse the user or make them think they have a separate username that they have forgotten.
+
+## Content accessibility
+
+Using an image to show text takes away the accessibility for blind and visually impaired users who use screen readers. It also makes the text a lot harder to read for anyone using a small screen.
+
+In some cases, the images may not load. This could be due to poor internet connection, overzealous ad blockers, or user settings.
+
+Text in images can’t be automatically translated in the browser, and users can’t copy and paste it into a translation service.
+
+Placeholder text within a form field makes it difficult for people to remember what information belongs in a field, and to check for and fix errors. It also poses additional burdens for users with visual and cognitive impairments.
+
+Read:
+
+- [Ghost: The big problem with sharing text in images](LINK)
+- [NNG: Placeholders in Form Fields Are Harmful](LINK)
+
+## Interface design
+
+If you find yourself having to explain how the the user interface works, that’s a sign something has gone wrong. Fix the interface so it doesn’t need explaining.
+
+If asking users to verify an email address with a security code, there’s no need to ask them to enter it twice.
+
+Avoid extra screens which do not add value to the user or progress the journey. Ask:
+
+even if there is value, is an extra screen the right place for it?
+does each screen have a real action?
+can three screens of a tutorial be one screen with short bullet points?
+
+Be consistent. If elements or links are common across screens or steps, keep them in the same position so users can find them.
+
+Let users process information at their own pace. Avoid pop ups or screens that move on automatically.
+
+If you can only use one of each “type” of documentation, make sure users know it - perhaps by grouping them together. For example, if they can’t use both a birth certificate and a passport, make this clear.
+
+Read:
+
+- [Forms that work: Designing web forms for usability](LINK)
+
+## Further reading
+
+- [GOV.UK Service Manual: writing for user interfaces](LINK)
+- [GOV.UK Service Manual: design](LINK)
+- [GOV.UK content principles: conventions and research background](LINK)
