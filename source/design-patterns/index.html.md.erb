@@ -1,19 +1,9 @@
 ---
 title: Design patterns
-weight: 6
+weight: 5
 ---
 
 # Design patterns
-
-There are 9 patterns, each in PDF form, on Google Drive.
-
-## Claire's description
-
-The patterns are based on findings from user research conducted by GDS, and relate to identity verification for government services. Identity providers may customise the patterns with their own design and branding.
-
-## About these patterns, PDF
-
-These content patterns are for identity providers (also known as certified companies) that are part of the GOV.UK Verify identity assurance federation.
 
 The patterns are based on findings from user research conducted by GDS, and relate to identity verification for government services. Identity providers may customise the patterns with their own design and branding.
 
@@ -22,3 +12,422 @@ Each pattern contains:
 - a summary of research findings
 - a screenshot of how the patterns might look
 - the raw content
+
+## Document picker
+
+The Verify hub for LOA1 does not ask users what identity documents they have. Identity providers need to ask users what documents they have if required for LOA1 or uplift.
+
+### Research findings
+
+We've observed the following:
+
+* some users will only select 1 or 2 documents when we know they have more
+* this could be reluctance to provide too much personal information
+* users can get confused about whether they are being asked whether they have a document at all or if they have it with them, so be specific
+
+### Design pattern
+
+IMAGE HERE
+
+The “I don't have any of these” option needs to be here. A user can select any provider that offers LOA1 when accessing an LOA1 service. However, that provider may not support methods that can uplift that user to LOA2. The user needs to be able to exit this provider so they can select one that can get them to LOA2.
+
+### Content
+
+  [h1] Select all the documents you have
+
+  We might not ask you to provide all of these; we’ll work out the most effective combination for you.
+
+  [link] I don't have any of these
+
+  [button] Continue
+
+## Faster payments
+
+This method may form part of the LOA1 verification journey.
+
+### Research findings
+
+We have been using and testing patterns for this verification method since 2015. We have observed 2 main challenges for users:
+
+* Users are anxious about giving out financial details online. They are often concerned that payments will be taken from their account.
+* Users are uncertain how and when they will receive the reference number. They might worry that the payment will take a long time to arrive or be unsure what to look for. People who do not use online or mobile banking worry that they may not receive a bank statement for a long time.
+
+People who have used similar methods to connect other online accounts are more likely to be confident using it here.
+
+Quotes from users:
+
+* “I don’t have a savings account or credit card [for KBVs] so I don’t have a credit record and a 1p payment seems weird [chooses app]”
+* “I’ve done the 1p deposit before and it took a week so I won't do that. And I don’t know why [this IDP] would have my credit record [chooses app]”
+* “I don’t want to sign into my online banking so I’ll do the multiple choice [chooses KBVs]”
+* “I’ve got a bad memory so asking me questions based on credit record won’t work... I’ve been locked out of a few websites for that before. Photographing my passport makes me nervous, it’s a precious document, and it’s the faffing around with app and the camera. I’ve done the 1p deposit/online banking with paypal before. It took a week but it worked. So I'll do that [chooses faster payments]”
+
+### Design pattern
+
+IMAGE HERE
+
+It's important that the sort code fields do not 'auto-tab' to the next field once the user has entered 2 characters.
+
+Users often say that they would prefer it if the fields did use auto-tab. Yet, throughout research, we find that it is more difficult for low confidence users to enter their information. It is also harder for the user to recover from an inputting error. GDS has blogged about [why we care more about effectiveness than efficiency or satisfaction](https://userresearch.blog.gov.uk/2017/04/18/why-we-care-more-about-effectiveness-than-efficiency-or-satisfaction/).
+
+### Content
+
+  [h1] UK bank account - step 1
+
+  We'll send 1 penny to your bank account, with a reference number that shows up on your statement.
+
+  On the next screen you can enter that reference number to verify your identity.
+
+  We won't use your account details for any other purpose.
+
+  Sort code
+
+  [field] [field] [field]
+
+  Account number
+
+  [field]
+
+  [button] Continue
+
+
+
+  [h1] UK bank account - step 2
+
+  We've sent 1 penny, with your reference number to:
+
+  Sort code:
+
+  Account number:
+
+  From: [IDP bank account name]
+
+  You'll need to check your bank account for this transaction - it might take a few minutes to arrive.
+
+  If you can't access your bank account at the moment, it's best to [link] sign out and sign in later when you have the reference number.
+
+  Reference number:
+
+  [field]
+
+  [Button] Continue
+
+## LOA1 failure
+
+If a user fails to verify at LOA1, it needs to be easy for them to try with a different IDP, or access the government service a different way. 
+
+Users who fail to verify their identity have still opened an account and registered with an IDP.
+
+### Research findings
+
+We have observed that users are more willing to try with a different IDP after LOA1 failure than after LOA2 failure. This may be due to the shorter journey for LOA1 than LOA2.
+
+### Design pattern
+
+IMAGE HERE
+
+This is key information. We recommend there is no auto redirect here, so they have time to read the message. This is especially important if users need to write down contact details or other information.
+
+### Content
+
+  [h1] [IDP] has been unable to verify your identity
+
+  To protect you against fraud, we can't be specific as to why this happened. The most common reasons are:
+  
+  * the details you provided don't match the information held by the DVLA, HM Passports Office or credit agencies
+
+  * there isn't enough information about your credit file or financial history
+
+  Your credit score has not been affected in any way during this process.
+
+  [button] Find out more on GOV.UK Verify
+
+## LOA1 success
+
+This needs to be consistent with the way we talk about LOA1 and LOA2 identity accounts throughout the federation.
+
+There is no user need to open an account or register. Users want to verify their identity so they can access the government service they set out to use.
+
+Users who fail to verify their identity have still opened an account and registered with an IDP.
+
+**Don't** use: ​‘Congratulations! You've opened your account’, or ‘Registration complete’
+
+### Research findings
+
+This pattern hasn't been problematic for users in our lab. Users understand that they have verified their identity, and that they have an identity account.
+
+### Design pattern
+
+IMAGE HERE
+
+We need to allow users enough time to read this page. We recommend at least 10 seconds before any auto redirect. Average reading speed is about 5 words per second. The more content on this page, the more time required before it auto redirects.
+
+### The content
+
+  [h1] [IDP] has verified your identity
+
+  You can now sign in with your [IDP] identity account whenever you see the GOV.UK Verify logo.
+
+  [verify logo]
+
+  We’ve sent you an email confirming you verified your identity with [IDP].
+
+  Continue to the government service you’re accessing.
+
+  [button] Continue to GOV.UK
+
+## Method choice
+
+When more than one verification method is available, users are more comfortable and progress faster if they are able to choose for themselves.
+
+### Research findings
+
+In early research, we found participants dropped out or struggled to continue when asked to use methods beyond their comfort or capability. For example:
+
+* one person dropped out at the KBV stage because she was uncomfortable with the IDP accessing her credit record
+* three people found it difficult and time-consuming to use faster payments as they did not use online banking
+
+When we introduced this pattern, participants expressed a range of reasons for choosing one method over another:
+
+* not using online banking (faster payments)
+* having got questions about bank accounts wrong in the past - due to having more than one account - and getting locked out of accounts
+* anxiety around uploading an image of their passport (document upload app)
+* reluctance to download an app
+
+Quotes from users:
+
+* “I can’t be bothered to download another app. I do like apps, but my phone is full, simple as that”
+* “I don’t have a savings account or credit card [for KBVs] so I don’t have a credit record and a 1p payment seems weird [chooses app]”
+* "I can’t be bothered to answer more questions [in KBVs]”
+* "I’ve done the 1p deposit before and it took a week so I won't do that. And I don’t know why [this IDP] would have my credit record [chooses app]”
+* “I don’t want to sign into my online banking so I’ll do the multiple choice [chooses KBVs]”
+* “I’ve got a bad memory so asking me questions based on credit record won’t work... I’ve been locked out of a few websites for that before. Photographing my passport makes me nervous, it’s a precious document, and it’s the faffing around with app and the camera. I’ve done the 1p deposit/online banking with paypal before. It took a week but it worked. So I'll do that [chooses faster payments]” .
+
+We have tested this pattern with 22 users over 4 rounds of research. All users have been comfortable and able to select a method.
+
+### Design pattern
+
+IMAGE HERE
+
+### Content
+
+  [h1] How do you want to verify your identity?
+
+  There are a number of ways [IDP] verify your identity, select which way you would prefer.
+
+  You may be required to complete more than one method.
+
+  Answer multiple choice questions
+
+  We’ll ask you up to 3 multiple choice questions based on your credit record that we have access to. This will not affect your credit score.
+
+  [dropdown link] What will the questions be?
+
+  Because everyone's situation is different, we can’t tell you now what these questions will be, but they’ll be something like ‘You signed a new mobile phone contract in May 2014, who was the provider?’ or ‘What was your last payment on your student loan?’
+
+  Get a payment reference from your bank statement
+
+  We'll send 1 penny to your bank account, and ask you to provide the reference number that shows up on your statement.
+
+  Photograph your driving licence with our free smartphone app
+  
+  You'll need to download our app and use your phone's camera to take a photo of your identity document and a selfie.
+
+  [button] Continue
+
+## Update personal details
+
+When a user needs to uplift to LOA2, this may be some time after they first verified at LOA1.
+
+This means their personal details (such as address) may have changed. This is the pattern we tested for allowing the user to review or change their personal details.
+
+### Research findings
+
+When we first tested this, one user thought his details had been 'retrieved' from somewhere else by the provider.
+
+We iterated to make it clear that the user had provided these details when they verified at LOA1. Since then this pattern has been well understood.
+
+### Design pattern
+
+IMAGE HERE
+
+### Content
+
+  [h1] Your details
+
+  If any of your personal details have changed since we verified your identity, you must update them.
+
+  [name]
+
+  [DoB]
+
+  [address]
+
+  [link] Update details
+
+  [button] Continue
+
+
+## Uplift message
+
+Uplift messaging needs to be consistent throughout the federation, so that the journey makes sense for users.
+
+### Research findings
+
+We've seen that users tend to pause on this page before clicking through.
+
+In one iteration of this message, the header said ‘You need to add more evidence to your identity account’. While users did not abandon, most were uncomfortable and displayed low comprehension. They felt they were to blame, that government didn’t trust them and that they had to prove they weren't a fraudster.
+
+Quotes from users:
+
+* “They don’t think I am me, or they need to verify I am me.”
+* “I have already verified so I don’t understand why they are asking me again.”
+* “They’re asking for a second verification.”
+
+We iterated the content to explain that the service needs users to provide more evidence because it’s at a higher risk of fraud. This resulted in users showing less concern. There was no evidence that users felt they were being blamed at this stage.
+
+Quotes from users:
+
+* “It needed more information to validate who I am. There is a higher level of fraud, so they needed more information.”
+* “It needs more evidence of who I am.... It’s a bit of overkill. It’s a good thing I only need to do it once.”
+* “I guess this is more a sensitive area.”
+* “It needs more evidence because it's not clear its me. Because I'm giving all my personal details and there are risks to it. They just want to be clear it’s me.”
+* “Ok that sounds quite straightforward... High risk of the information here. You don’t want people getting this kind of information.”
+
+In previous iterations we tried different messaging, for example telling users we need to 'verify your identity to a higher level'. Users reported confusion here, so it's important to make sure language is clear and consistent across the federation.
+
+Quotes from users:
+
+* "This is worrying, what are they accessing? I would have to think if I would continue or I might just stop, it depends on what they ask I guess”
+* “It makes you feel like there’s another check being done on you, it’s not really a positive. It’s like you’re being checked, not just your details. You feel like you’re on a different list, like I am in a group that needs a further check”
+
+### Design pattern
+
+IMAGE HERE
+
+### Content
+
+  [h1] The government service needs to be more confident it's you
+
+  Because the service you're accessing is at a higher risk of fraud, you need to provide more evidence; this is to make sure someone isn't pretending to be you.
+
+  You add the evidence by entering identity document and bank details and then answering questions only you should know the answer to.
+
+  You won’t need to do this every time you access a government service.
+
+  Once we've checked the evidence and we know that it's you, you can sign in with your [IDP] identity account whenever you see the GOV.UK Verify logo.
+
+
+  [Verify logo]
+
+  [button] Continue
+
+  [link] I can’t provide more evidence
+
+
+## Uplift success
+
+The uplift journey is a sign in. This means that the Verify hub does not have a confirmation page telling users they have signed in and can continue to the government service. Users need time to read this page and understand it. So we recommend there is no auto redirect.
+
+### Research findings
+
+The first heading we tested talked about ‘levels’:
+
+'[IDP] has verified your identity to the higher level required by the government service.’
+
+This confused users as we don’t talk about levels anywhere else in the hub or in the IDP journey. Users were even more confused when there was a time delay between accessing an LOA1 service and uplift to LOA2.
+
+After adding information for LOA1 and then more for LOA2, some users thought they would need to add information every time they used Verify. It's important to clarify that this is not the case, to encourage re-use.
+
+Quotes from users:
+
+* “I was setting up an account to access government services”
+* “[Next time I have to use a government service] I can just log in again with [IDP] rather than having to go through lots of different questions”
+* “I could go to 'already verified' by [IDP] to do my tax again”
+* “I’ve created an account on GOV.UK. I can just sign in again but if I hadn’t used it in a while, I might have to do more questions”
+
+### Design pattern
+
+IMAGE HERE
+
+### Content
+
+  [h1] The evidence you provided is valid
+
+  We're confident it's you accessing the government service, and not someone pretending to be you. You can continue to GOV.UK.
+
+  We've updated your identity account so you will not be asked for more evidence again when you need to access another government service.
+
+  You can now sign in with your identity account whenever you see the GOV.UK Verify logo.
+
+  [verify logo]
+
+  Access all government services that use GOV.UK Verify with your username, password and the security code we send to your mobile phone.
+
+  [button] Continue to GOV.UK
+
+## Uplift failure
+
+This is key information for users, so we recommend there is no auto redirect here to allow them time to read it.
+
+### Research findings
+
+We've observed that users experience strong emotions when they reach this page. Most show frustration. They know they are who they've said they are, and aren't sure why they've
+been unsuccessful.
+
+There's a strong desire among users to be able to go back and "fix it" as they assume they've made a small error. They're also keen to see a record of the details they entered so they can double check where they went wrong.
+
+Some users may give up on verifying, but most will try again. Users see completing the service offline as a last resort. This means that they may attempt to:
+
+* click the back button to fix their mistake
+* try again from the start with same IDP
+* contact the IDP to get the error fixed
+* try again with a different IDP
+
+Quotes from users:
+
+* “It’s because I answered one of the questions wrong. I have two accounts so wasn’t sure which one I should answer for. It [the KBV] wasn’t worded well”
+* “Can I click the back button and change my answer?”
+* “I'm annoyed - is there a way I can check what went wrong?"
+* “I wouldn’t try to do this another way, I’d try to fix it”
+* “I would call [IDP] to see what went wrong”
+* “Maybe it’s because I have two addresses?”
+* “I have no idea why it failed”
+* "I did the mortgage question wrong, I realise that now”
+
+For some users, failure can cause quite a bit of anxiety. Users with low digital confidence, or past experiences with fraud, or bad credit may feel vulnerable or worried.
+
+Some fear that they've been a victim of fraud, and it has affected their credit record. They are then keen to contact the IDP to find out why they've failed.
+
+Quotes from users:
+
+* “I’d feel very insecure”
+* "I'd be very concerned"
+* “I’d be pretty nervous. My priority would be fixing this with [IDP] and finding out what went wrong”
+* “Does this mean I’m less protected?”
+
+We've noticed that participants are less likely to click 'Find out more on GOV.UK' than they are after LOA1 failure. This may be because they have invested a lot of time already. However, this wording does seem to be more encouraging than 'Continue'.
+
+There's a lot of information to process on this screen. Users don't always understand that they can still use their LOA1 identity account for other services.
+
+### Design pattern
+
+IMAGE HERE
+
+This is key information. We recommend there is no auto redirect here, so they have time to read the message. This is especially important if users need to write down contact details or other information.
+
+### Content
+
+  [h1] [IDP] could not validate the evidence you provided
+
+  To protect you against fraud, we can't be specific as to why this happened. The most common reasons are:
+
+  * there isn't enough information about you on your credit file or financial history
+  * the details you provided don't match the information held by the DVLA, HM Passports Office or credit agencies
+
+  Your credit score has not been affected in any way during this process.
+
+  You can still use your [IDP] identity account to access government services that don’t require the extra evidence.
+
+  [verify logo]
+
+  [button] Find out more on GOV.UK Verify
