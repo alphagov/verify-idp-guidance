@@ -19,7 +19,7 @@ The Verify hub for LOA1 does not ask users what identity documents they have. Id
 
 ### Research findings
 
-We've observed the following:
+We have observed the following:
 
 * some users will only select 1 or 2 documents when we know they have more
 * this could be reluctance to provide too much personal information
@@ -33,6 +33,7 @@ The “I don't have any of these” option needs to be here. A user can select a
 
 ### Content
 
+```
   [h1] Select all the documents you have
 
   We might not ask you to provide all of these; we’ll work out the most effective combination for you.
@@ -40,6 +41,7 @@ The “I don't have any of these” option needs to be here. A user can select a
   [link] I don't have any of these
 
   [button] Continue
+```
 
 ## Faster payments
 
@@ -56,9 +58,9 @@ People who have used similar methods to connect other online accounts are more l
 
 Quotes from users:
 
-* “I don’t have a savings account or credit card [for KBVs] so I don’t have a credit record and a 1p payment seems weird [chooses app]”
+* “I don’t have a savings account or credit card [for knowledge based verification] so I don’t have a credit record and a 1p payment seems weird [chooses app]”
 * “I’ve done the 1p deposit before and it took a week so I won't do that. And I don’t know why [this IDP] would have my credit record [chooses app]”
-* “I don’t want to sign into my online banking so I’ll do the multiple choice [chooses KBVs]”
+* “I don’t want to sign into my online banking so I’ll do the multiple choice [chooses knowledge based verification]”
 * “I’ve got a bad memory so asking me questions based on credit record won’t work... I’ve been locked out of a few websites for that before. Photographing my passport makes me nervous, it’s a precious document, and it’s the faffing around with app and the camera. I’ve done the 1p deposit/online banking with paypal before. It took a week but it worked. So I'll do that [chooses faster payments]”
 
 ### Design pattern
@@ -67,12 +69,13 @@ Quotes from users:
 
 ![An example layout for faster payments step 2](/images/Faster-payments.png)
 
-It's important that the sort code fields do not 'auto-tab' to the next field once the user has entered 2 characters.
+It is important that the sort code fields do not 'auto-tab' to the next field once the user has entered 2 characters.
 
 Users often say that they would prefer it if the fields did use auto-tab. Yet, throughout research, we find that it is more difficult for low confidence users to enter their information. It is also harder for the user to recover from an inputting error. GDS has blogged about [why we care more about effectiveness than efficiency or satisfaction](https://userresearch.blog.gov.uk/2017/04/18/why-we-care-more-about-effectiveness-than-efficiency-or-satisfaction/).
 
 ### Content
 
+```
   [h1] UK bank account - step 1
 
   We'll send 1 penny to your bank account, with a reference number that shows up on your statement.
@@ -90,9 +93,9 @@ Users often say that they would prefer it if the fields did use auto-tab. Yet, t
   [field]
 
   [button] Continue
+```
 
-
-
+```
   [h1] UK bank account - step 2
 
   We've sent 1 penny, with your reference number to:
@@ -112,6 +115,7 @@ Users often say that they would prefer it if the fields did use auto-tab. Yet, t
   [field]
 
   [Button] Continue
+```
 
 ## LOA1 failure
 
@@ -131,6 +135,7 @@ This is key information. We recommend there is no auto redirect here, so they ha
 
 ### Content
 
+```
   [h1] [IDP] has been unable to verify your identity
 
   To protect you against fraud, we can't be specific as to why this happened. The most common reasons are:
@@ -142,6 +147,7 @@ This is key information. We recommend there is no auto redirect here, so they ha
   Your credit score has not been affected in any way during this process.
 
   [button] Find out more on GOV.UK Verify
+```
 
 ## LOA1 success
 
@@ -151,7 +157,7 @@ There is no user need to open an account or register. Users want to verify their
 
 Users who fail to verify their identity have still opened an account and registered with an IDP.
 
-**Don't** use: ‘Congratulations! You've opened your account’, or ‘Registration complete’
+Do not use: ‘Congratulations! You've opened your account’, or ‘Registration complete’
 
 ### Research findings
 
@@ -165,6 +171,7 @@ We need to allow users enough time to read this page. We recommend at least 10 s
 
 ### The content
 
+```
   [h1] [IDP] has verified your identity
 
   You can now sign in with your [IDP] identity account whenever you see the GOV.UK Verify logo.
@@ -176,6 +183,7 @@ We need to allow users enough time to read this page. We recommend at least 10 s
   Continue to the government service you’re accessing.
 
   [button] Continue to GOV.UK
+```
 
 ## Method choice
 
@@ -185,7 +193,7 @@ When more than one verification method is available, users are more comfortable 
 
 In early research, we found participants dropped out or struggled to continue when asked to use methods beyond their comfort or capability. For example:
 
-* one person dropped out at the KBV stage because she was uncomfortable with the IDP accessing her credit record
+* one person dropped out at the knowledge based verification stage because she was uncomfortable with the IDP accessing her credit record
 * three people found it difficult and time-consuming to use faster payments as they did not use online banking
 
 When we introduced this pattern, participants expressed a range of reasons for choosing one method over another:
@@ -198,10 +206,10 @@ When we introduced this pattern, participants expressed a range of reasons for c
 Quotes from users:
 
 * “I can’t be bothered to download another app. I do like apps, but my phone is full, simple as that”
-* “I don’t have a savings account or credit card [for KBVs] so I don’t have a credit record and a 1p payment seems weird [chooses app]”
-* "I can’t be bothered to answer more questions [in KBVs]”
+* “I don’t have a savings account or credit card [for knowledge based verification] so I don’t have a credit record and a 1p payment seems weird [chooses app]”
+* "I can’t be bothered to answer more questions [in knowledge based verification]”
 * "I’ve done the 1p deposit before and it took a week so I won't do that. And I don’t know why [this IDP] would have my credit record [chooses app]”
-* “I don’t want to sign into my online banking so I’ll do the multiple choice [chooses KBVs]”
+* “I don’t want to sign into my online banking so I’ll do the multiple choice [chooses knowledge based verification]”
 * “I’ve got a bad memory so asking me questions based on credit record won’t work... I’ve been locked out of a few websites for that before. Photographing my passport makes me nervous, it’s a precious document, and it’s the faffing around with app and the camera. I’ve done the 1p deposit/online banking with paypal before. It took a week but it worked. So I'll do that [chooses faster payments]” .
 
 We have tested this pattern with 22 users over 4 rounds of research. All users have been comfortable and able to select a method.
@@ -214,6 +222,7 @@ We have tested this pattern with 22 users over 4 rounds of research. All users h
 
 ### Content
 
+```
   [h1] How do you want to verify your identity?
 
   There are a number of ways [IDP] verify your identity, select which way you would prefer.
@@ -237,6 +246,7 @@ We have tested this pattern with 22 users over 4 rounds of research. All users h
   You'll need to download our app and use your phone's camera to take a photo of your identity document and a selfie.
 
   [button] Continue
+```
 
 ## Update personal details
 
@@ -256,6 +266,7 @@ We iterated to make it clear that the user had provided these details when they 
 
 ### Content
 
+```
   [h1] Your details
 
   If any of your personal details have changed since we verified your identity, you must update them.
@@ -269,17 +280,19 @@ We iterated to make it clear that the user had provided these details when they 
   [link] Update details
 
   [button] Continue
-
+```
 
 ## Uplift message
+
+Uplift is the process of taking a user who has been verified at LOA1, to LOA2. 
 
 Uplift messaging needs to be consistent throughout the federation, so that the journey makes sense for users.
 
 ### Research findings
 
-We've seen that users tend to pause on this page before clicking through.
+We have seen that users tend to pause on this page before clicking through.
 
-In one iteration of this message, the header said ‘You need to add more evidence to your identity account’. While users did not abandon, most were uncomfortable and displayed low comprehension. They felt they were to blame, that government didn’t trust them and that they had to prove they weren't a fraudster.
+In one iteration of this message, the header said ‘You need to add more evidence to your identity account’. While users did not abandon, most were uncomfortable and displayed low comprehension. They felt they were to blame, that government did not trust them and that they had to prove they were not a fraudster.
 
 Quotes from users:
 
@@ -287,7 +300,7 @@ Quotes from users:
 * “I have already verified so I don’t understand why they are asking me again.”
 * “They’re asking for a second verification.”
 
-We iterated the content to explain that the service needs users to provide more evidence because it’s at a higher risk of fraud. This resulted in users showing less concern. There was no evidence that users felt they were being blamed at this stage.
+We iterated the content to explain that the service needs users to provide more evidence because it is at a higher risk of fraud. This resulted in users showing less concern. There was no evidence that users felt they were being blamed at this stage.
 
 Quotes from users:
 
@@ -297,7 +310,7 @@ Quotes from users:
 * “It needs more evidence because it's not clear its me. Because I'm giving all my personal details and there are risks to it. They just want to be clear it’s me.”
 * “Ok that sounds quite straightforward... High risk of the information here. You don’t want people getting this kind of information.”
 
-In previous iterations we tried different messaging, for example telling users we need to 'verify your identity to a higher level'. Users reported confusion here, so it's important to make sure language is clear and consistent across the federation.
+In previous iterations we tried different messaging, for example telling users we need to 'verify your identity to a higher level'. Users reported confusion here, so it is important to make sure language is clear and consistent across the federation.
 
 Quotes from users:
 
@@ -310,6 +323,7 @@ Quotes from users:
 
 ### Content
 
+```
   [h1] The government service needs to be more confident it's you
 
   Because the service you're accessing is at a higher risk of fraud, you need to provide more evidence; this is to make sure someone isn't pretending to be you.
@@ -326,7 +340,7 @@ Quotes from users:
   [button] Continue
 
   [link] I can’t provide more evidence
-
+```
 
 ## Uplift success
 
@@ -338,9 +352,9 @@ The first heading we tested talked about ‘levels’:
 
 '[IDP] has verified your identity to the higher level required by the government service.’
 
-This confused users as we don’t talk about levels anywhere else in the hub or in the IDP journey. Users were even more confused when there was a time delay between accessing an LOA1 service and uplift to LOA2.
+This confused users as we do not talk about levels anywhere else in the hub or in the IDP journey. Users were even more confused when there was a time delay between accessing an LOA1 service and uplift to LOA2.
 
-After adding information for LOA1 and then more for LOA2, some users thought they would need to add information every time they used Verify. It's important to clarify that this is not the case, to encourage re-use.
+After adding information for LOA1 and then more for LOA2, some users thought they would need to add information every time they used Verify. It is important to clarify that this is not the case, to encourage re-use.
 
 Quotes from users:
 
@@ -354,7 +368,7 @@ Quotes from users:
 ![An example layout for uplift success](/images/Uplift-success.png)
 
 ### Content
-
+```
   [h1] The evidence you provided is valid
 
   We're confident it's you accessing the government service, and not someone pretending to be you. You can continue to GOV.UK.
@@ -368,6 +382,7 @@ Quotes from users:
   Access all government services that use GOV.UK Verify with your username, password and the security code we send to your mobile phone.
 
   [button] Continue to GOV.UK
+```
 
 ## Uplift failure
 
@@ -375,10 +390,9 @@ This is key information for users, so we recommend there is no auto redirect her
 
 ### Research findings
 
-We've observed that users experience strong emotions when they reach this page. Most show frustration. They know they are who they've said they are, and aren't sure why they've
-been unsuccessful.
+We have observed that users experience strong emotions when they reach this page. Most show frustration. They know they are who they have said they are, and aren't sure why they have been unsuccessful.
 
-There's a strong desire among users to be able to go back and "fix it" as they assume they've made a small error. They're also keen to see a record of the details they entered so they can double check where they went wrong.
+There is a strong desire among users to be able to go back and "fix it" as they assume they've made a small error. They're also keen to see a record of the details they entered so they can double check where they went wrong.
 
 Some users may give up on verifying, but most will try again. Users see completing the service offline as a last resort. This means that they may attempt to:
 
@@ -389,7 +403,7 @@ Some users may give up on verifying, but most will try again. Users see completi
 
 Quotes from users:
 
-* “It’s because I answered one of the questions wrong. I have two accounts so wasn’t sure which one I should answer for. It [the KBV] wasn’t worded well”
+* “It’s because I answered one of the questions wrong. I have two accounts so wasn’t sure which one I should answer for. It [the knowledge based verification question] wasn’t worded well”
 * “Can I click the back button and change my answer?”
 * “I'm annoyed - is there a way I can check what went wrong?"
 * “I wouldn’t try to do this another way, I’d try to fix it”
@@ -400,7 +414,7 @@ Quotes from users:
 
 For some users, failure can cause quite a bit of anxiety. Users with low digital confidence, or past experiences with fraud, or bad credit may feel vulnerable or worried.
 
-Some fear that they've been a victim of fraud, and it has affected their credit record. They are then keen to contact the IDP to find out why they've failed.
+Some fear that they have been a victim of fraud, and it has affected their credit record. They are then keen to contact the IDP to find out why they have failed.
 
 Quotes from users:
 
@@ -409,9 +423,9 @@ Quotes from users:
 * “I’d be pretty nervous. My priority would be fixing this with [IDP] and finding out what went wrong”
 * “Does this mean I’m less protected?”
 
-We've noticed that participants are less likely to click 'Find out more on GOV.UK' than they are after LOA1 failure. This may be because they have invested a lot of time already. However, this wording does seem to be more encouraging than 'Continue'.
+We have noticed that participants are less likely to click 'Find out more on GOV.UK' than they are after LOA1 failure. This may be because they have invested a lot of time already. However, this wording does seem to be more encouraging than 'Continue'.
 
-There's a lot of information to process on this screen. Users don't always understand that they can still use their LOA1 identity account for other services.
+There's a lot of information to process on this screen. Users do not always understand that they can still use their LOA1 identity account for other services.
 
 ### Design pattern
 
@@ -420,7 +434,7 @@ There's a lot of information to process on this screen. Users don't always under
 This is key information. We recommend there is no auto redirect here, so they have time to read the message. This is especially important if users need to write down contact details or other information.
 
 ### Content
-
+```
   [h1] [IDP] could not validate the evidence you provided
 
   To protect you against fraud, we can't be specific as to why this happened. The most common reasons are:
@@ -435,3 +449,4 @@ This is key information. We recommend there is no auto redirect here, so they ha
   [verify logo]
 
   [button] Find out more on GOV.UK Verify
+```
