@@ -1,5 +1,5 @@
 # Host to use for canonical URL generation (without trailing slash)
-host: verify-idp-guidance.cloudapps.digital
+host: www.identity-providers.verify.service.gov.uk
 
 # GOV.UK logo set to false until deployed to .service.gov.uk domain
 show_govuk_logo: true
