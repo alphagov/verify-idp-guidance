@@ -20,6 +20,9 @@ header_links:
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
 
+# Setting show_expiry: false to not have a red banner when it's past the review due date. The review_in parameter in the frontmatter is for internal use.
+show_expiry: false
+
 # Tracking ID from Google Analytics (e.g. UA-XXXX-Y)
 ga_tracking_id:
 
