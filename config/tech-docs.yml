@@ -1,12 +1,12 @@
 # Host to use for canonical URL generation (without trailing slash)
-host: www.identity-providers.verify.service.gov.uk
+host: https://www.identity-providers.verify.service.gov.uk
 
 # GOV.UK logo set to false until deployed to .service.gov.uk domain
 show_govuk_logo: true
 
 # Header-related options
 service_name: Verify
-service_link: www.verify.service.gov.uk
+service_link: https://www.verify.service.gov.uk
 ## phase of your project, for example ALPHA, BETA
 # phase: TESTING PHASE
 
