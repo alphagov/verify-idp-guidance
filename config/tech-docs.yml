@@ -13,8 +13,8 @@ service_link: https://www.verify.service.gov.uk
 # Links to show on right-hand-side of header
 header_links:
   About: https://www.verify.service.gov.uk
-  Connect: https://www.verify.service.gov.uk/connect
-  Documentation: https://www.docs.verify.service.gov.uk
+# Connect: https://www.verify.service.gov.uk/connect # Does not apply to IDPs
+# Documentation: https://www.docs.verify.service.gov.uk # Does not apply to IDPs
   Support: https://www.verify.service.gov.uk/support
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
