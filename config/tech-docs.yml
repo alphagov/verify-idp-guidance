@@ -2,7 +2,7 @@
 host: verify-idp-guidance.cloudapps.digital
 
 # GOV.UK logo set to false until deployed to .service.gov.uk domain
-show_govuk_logo: false
+show_govuk_logo: true
 
 # Header-related options
 service_name: Verify
