@@ -6,7 +6,7 @@ show_govuk_logo: false
 
 # Header-related options
 service_name: Verify
-service_link: verify-idp-guidance.cloudapps.digital
+service_link: www.verify.service.gov.uk
 ## phase of your project, for example ALPHA, BETA
 # phase: TESTING PHASE
 
