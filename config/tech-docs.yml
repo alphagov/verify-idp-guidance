@@ -7,7 +7,8 @@ show_govuk_logo: false
 # Header-related options
 service_name: Guidance for identity providers
 service_link: verify-idp-guidance.cloudapps.digital
-phase: TESTING PHASE
+## phase of your project, for example ALPHA, BETA
+# phase: TESTING PHASE
 
 # Links to show on right-hand-side of header
 header_links:
