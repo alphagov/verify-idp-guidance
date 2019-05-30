@@ -1,19 +1,20 @@
 # Host to use for canonical URL generation (without trailing slash)
-host: verify-idp-guidance.cloudapps.digital
+host: https://www.identity-providers.verify.service.gov.uk
 
 # GOV.UK logo set to false until deployed to .service.gov.uk domain
-show_govuk_logo: false
+show_govuk_logo: true
 
 # Header-related options
-service_name: Guidance for identity providers
-service_link: verify-idp-guidance.cloudapps.digital
-phase: TESTING PHASE
+service_name: Verify
+service_link: https://www.verify.service.gov.uk
+## phase of your project, for example ALPHA, BETA
+# phase: TESTING PHASE
 
 # Links to show on right-hand-side of header
 header_links:
   About: https://www.verify.service.gov.uk
-  Connect: https://www.verify.service.gov.uk/connect
-  Documentation: https://www.docs.verify.service.gov.uk
+# Connect: https://www.verify.service.gov.uk/connect # Does not apply to IDPs
+# Documentation: https://www.docs.verify.service.gov.uk # Does not apply to IDPs
   Support: https://www.verify.service.gov.uk/support
 
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
@@ -37,7 +38,7 @@ collapsible_nav: true
 max_toc_heading_level: 3
 
 # Prevent robots from indexing (e.g. whilst in development)
-prevent_indexing: true
+prevent_indexing: false
 
 show_contribution_banner: true
 github_repo: alphagov/verify-idp-guidance
