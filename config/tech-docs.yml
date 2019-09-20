@@ -17,6 +17,10 @@ header_links:
 # Documentation: https://www.docs.verify.service.gov.uk # Does not apply to IDPs
   Support: https://www.verify.service.gov.uk/support
 
+# Links to show in the page footer
+footer_links:
+  Accessibility: /accessibility-statement
+
 # Enables search functionality. This indexes pages only and is not recommended for single-page sites.
 enable_search: true
 
