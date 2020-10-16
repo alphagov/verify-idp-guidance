@@ -6,4 +6,11 @@ GovukTechDocs::SourceUrls.class_eval do
   end
 end
 
+ready do
+  sitemap.resources
+         .map(&:path)
+         .select { |path| path.end_with?('.html') }
+         .each { |page| redirect page, to: config[:tech_docs][:service_link] }
+end
+
 GovukTechDocs.configure(self)
