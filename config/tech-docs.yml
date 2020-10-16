@@ -46,3 +46,19 @@ prevent_indexing: false
 
 show_contribution_banner: true
 github_repo: alphagov/verify-idp-guidance
+
+redirects:
+  /index.html: https://www.verify.service.gov.uk/
+  /user-research/index.html: https://www.verify.service.gov.uk/
+  /design-and-content/index.html: https://www.verify.service.gov.uk/
+  /accessibility/index.html: https://www.verify.service.gov.uk/
+  /accessibility-statement/index.html: https://www.verify.service.gov.uk/
+  /design-patterns/index.html: https://www.verify.service.gov.uk/
+  /branding/index.html: https://www.verify.service.gov.uk/
+  /3-monthly-report/index.html: https://www.verify.service.gov.uk/
+
+
+
+
+
+
